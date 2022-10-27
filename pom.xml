@@ -54,26 +54,32 @@
 		<!-- querydsl -->
 		<dependency>
 			<groupId>com.querydsl</groupId>
-			<artifactId>querydsl-jpa</artifactId>			
+			<artifactId>querydsl-jpa</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>com.querydsl</groupId>
-			<artifactId>querydsl-apt</artifactId>			
+			<artifactId>querydsl-apt</artifactId>
 		</dependency>
 
 		<!-- thymeleaf-layout -->
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
-			<artifactId>thymeleaf-layout-dialect</artifactId>			
+			<artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
 
 		<!-- security -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>			
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
+		<!-- validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+			<version>2.7.3</version>
+		</dependency>
 
 	</dependencies>
 

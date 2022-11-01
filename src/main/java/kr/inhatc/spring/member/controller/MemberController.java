@@ -27,6 +27,12 @@ public class MemberController {
 	@Autowired
 	PasswordEncoder passwordEncoder;
 	
+	@GetMapping("/login")
+	public String login() {
+		return "member/memberLogin";   
+	}
+	
+	
 	@GetMapping("/new")
 	public String memberForm(Model model) {
 		model.addAttribute("memberFormDto", new MemberFormDto());
@@ -49,6 +55,12 @@ public class MemberController {
 			return "member/memberForm";
 		}
 		return "redirect:/"; 
+	}
+	
+	@GetMapping("/login/error")
+	public String loginError(Model model) {
+		model.addAttribute("loginErrorMsg", "아이디 또는 패스워드가 잘못되었습니다.");
+		return "member/memberLogin";	 
 	}
 	
 }
